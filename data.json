@@ -1,0 +1,719 @@
+{
+	"stations": [
+		{
+			"Name": "Vaishali",
+			"Neighbours": ["Kaushambi"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Kaushambi",
+			"Neighbours": ["Vaishali", "Anand Vihar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Anand Vihar",
+			"Neighbours": ["Kaushambi", "Karkar Duma", "IP Extension"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Karkar Duma",
+			"Neighbours": ["Anand Vihar", "Preet Vihar", "Karkarduma Court"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Preet Vihar",
+			"Neighbours": ["Karkar Duma", "Nirman Vihar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Nirman Vihar",
+			"Neighbours": ["Preet Vihar", "Laxmi Nagar"],
+			"Line": "BLUE"
+		},
+
+		{
+			"Name": "Laxmi Nagar",
+			"Neighbours": ["Nirman Vihar", "Yamuna Bank"],
+			"Line": "BLUE"
+		},
+
+		{
+			"Name": "Noida Electronic City",
+			"Neighbours": ["Noida Sector 62"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 62",
+			"Neighbours": ["Noida Electronic City", "Noida Sector 59"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 59",
+			"Neighbours": ["Noida Sector 62", "Noida Sector 61"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 61",
+			"Neighbours": ["Noida Sector 59", "Noida Sector 52"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 52",
+			"Neighbours": ["Noida Sector 61", "Noida Sector 34"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 34",
+			"Neighbours": ["Noida Sector 52", "Noida City Centre"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida City Centre",
+			"Neighbours": ["Noida Sector 34", "Golf Course"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Golf Course",
+			"Neighbours": ["Noida City Centre", "Botanical Garden"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Botanical Garden",
+			"Neighbours": ["Golf Course", "Noida Sector 18"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 18",
+			"Neighbours": ["Botanical Garden", "Noida Sector 16"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 16",
+			"Neighbours": ["Noida Sector 18", "Noida Sector 15"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Noida Sector 15",
+			"Neighbours": ["Noida Sector 16", "New Ashok Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "New Ashok Nagar",
+			"Neighbours": ["Noida Sector 15", "Mayur Vihar Ext"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Mayur Vihar Ext",
+			"Neighbours": ["New Ashok Nagar", "Mayur Vihar - I"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Mayur Vihar - I",
+			"Neighbours": [
+				"Mayur Vihar Ext",
+				"Akshardham",
+				"Hazrat Nizamuddin",
+				"Mayur Vihar Pocket 1"
+			],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Akshardham",
+			"Neighbours": ["Mayur Vihar - I", "Yamuna Bank"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Yamuna Bank",
+			"Neighbours": ["Akshardham", "Indraprasta", "Laxmi Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Indraprasta",
+			"Neighbours": ["Yamuna Bank", "Supreme Court"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Supreme Court",
+			"Neighbours": ["Indraprasta", "Mandi House"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Mandi House",
+			"Neighbours": ["Supreme Court", "Barakhamba", "Janpath", "ITO"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Barakhamba",
+			"Neighbours": ["Mandi House", "Rajiv Chowk"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Rajiv Chowk",
+			"Neighbours": ["Barakhamba", "RK Ashram Marg"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "RK Ashram Marg",
+			"Neighbours": ["Rajiv Chowk", "Jhandewalan"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Jhandewalan",
+			"Neighbours": ["RK Ashram Marg", "Karol Bagh"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Karol Bagh",
+			"Neighbours": ["Jhandewalan", "Rajendra Place"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Rajendra Place",
+			"Neighbours": ["Karol Bagh", "Patel Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Patel Nagar",
+			"Neighbours": ["Rajendra Place", "Shadi Pur"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Shadi Pur",
+			"Neighbours": ["Patel Nagar", "Kirti Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Kirti Nagar",
+			"Neighbours": ["Shadi Pur", "Moti Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Moti Nagar",
+			"Neighbours": ["Kirti Nagar", "Ramesh Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Ramesh Nagar",
+			"Neighbours": ["Moti Nagar", "Rajouri Garden"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Rajouri Garden",
+			"Neighbours": [
+				"Ramesh Nagar",
+				"Tagore Garden",
+				"ESI Hospital",
+				"Maya Puri"
+			],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Tagore Garden",
+			"Neighbours": ["Rajouri Garden", "Subash Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Subash Nagar",
+			"Neighbours": ["Tagore Garden", "Tilak Nagar"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Tilak Nagar",
+			"Neighbours": ["Subash Nagar", "Janak Puri East"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Janak Puri East",
+			"Neighbours": ["Tilak Nagar", "Janak Puri West"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Janak Puri West",
+			"Neighbours": ["Janak Puri East", "Uttam Nagar East"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Uttam Nagar East",
+			"Neighbours": ["Janak Puri West", "Uttam Nagar West"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Uttam Nagar West",
+			"Neighbours": ["Uttam Nagar East", "Nawada"],
+			"Line": "BLUE"
+		},
+
+		{
+			"Name": "Nawada",
+			"Neighbours": ["Uttam Nagar West", "Dwaraka Mor"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwaraka Mor",
+			"Neighbours": ["Nawada", "Dwarka"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka",
+			"Neighbours": ["Dwaraka Mor", "Dwarka Sector - 14"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 14",
+			"Neighbours": ["Dwarka", "Dwarka Sector - 13"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 13",
+			"Neighbours": ["Dwarka Sector - 14", "Dwarka Sector - 12"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 12",
+			"Neighbours": ["Dwarka Sector - 13", "Dwarka Sector - 11"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 11",
+			"Neighbours": ["Dwarka Sector - 12", "Dwarka Sector - 10"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 10",
+			"Neighbours": ["Dwarka Sector - 11", "Dwarka Sector - 9"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 9",
+			"Neighbours": ["Dwarka Sector - 10", "Dwarka Sector - 8"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 8",
+			"Neighbours": ["Dwarka Sector - 9", "Dwarka Sector - 21"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dwarka Sector - 21",
+			"Neighbours": ["Dwarka Sector - 8"],
+			"Line": "BLUE"
+		},
+		{
+			"Name": "Dilshad Garden",
+			"Neighbours": ["Jhilmil"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Jhilmil",
+			"Neighbours": ["Dilshad Garden", "Mansarover Park"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Mansarover Park",
+			"Neighbours": ["Jhilmil", "Shahdara"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Shahdara",
+			"Neighbours": ["Mansarover Park", "Welcome"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Welcome",
+			"Neighbours": ["Shahdara", "Seelampur", "Jaffrabad", "East Azad Nagar"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Seelampur",
+			"Neighbours": ["Welcome", "Shastri Park"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Shastri Park",
+			"Neighbours": ["Seelampur", "Kashmere Gate"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Tis Hazari",
+			"Neighbours": ["Kashmere Gate", "Pulbangash"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Pulbangash",
+			"Neighbours": ["Tis Hazari", "Pratap Nagar"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Pratap Nagar",
+			"Neighbours": ["Pulbangash", "Shastri Nagar"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Shastri Nagar",
+			"Neighbours": ["Pratap Nagar", "Inderlok Line-1"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Inderlok Line-1",
+			"Neighbours": ["Shastri Nagar", "Kanhaiya Nagar"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Kanhaiya Nagar",
+			"Neighbours": ["Inderlok Line-1", "Keshav Puram"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Keshav Puram",
+			"Neighbours": ["Kanhaiya Nagar", "Netaji Subhash Place"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Netaji Subhash Place",
+			"Neighbours": [
+				"Keshav Puram",
+				"Kohat Enclave",
+				"Shalimar Bagh",
+				"Shakurpur"
+			],
+			"Line": "RED"
+		},
+		{
+			"Name": "Kohat Enclave",
+			"Neighbours": ["Netaji Subhash Place", "Pitampura"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Pitampura",
+			"Neighbours": ["Kohat Enclave", "Rohini East"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Rohini East",
+			"Neighbours": ["Pitampura", "Rohini West"],
+			"Line": "RED"
+		},
+		{
+			"Name": "Rohini West",
+			"Neighbours": ["Rohini East", "Rithala"],
+			"Line": "RED"
+		},
+		{ "Name": "Rithala", "Neighbours": ["Rohini West"], "Line": "RED" },
+
+		{ "Name": "Majlis Park", "Neighbours": ["Azadpur"], "Line": "PINK" },
+		{
+			"Name": "Azadpur",
+			"Neighbours": ["Majlis Park", "Shalimar Bagh"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Shalimar Bagh",
+			"Neighbours": ["Azadpur", "Netaji Subhash Place"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Shakurpur",
+			"Neighbours": ["Netaji Subhash Place", "Punjabi Bagh West"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Punjabi Bagh West",
+			"Neighbours": ["Shakurpur", "ESI Hospital"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "ESI Hospital",
+			"Neighbours": ["Punjabi Bagh West", "Rajouri Garden"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Maya Puri",
+			"Neighbours": ["Rajouri Garden", "Nariana Vihar"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Nariana Vihar",
+			"Neighbours": ["Maya Puri", "Delhi Cantt"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Delhi Cantt",
+			"Neighbours": ["Nariana Vihar", "Durgabai Deshmukh South Campus"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Durgabai Deshmukh South Campus",
+			"Neighbours": ["Delhi Cantt", "Sir Vishweshwaraiah Moti Bagh"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Sir Vishweshwaraiah Moti Bagh",
+			"Neighbours": ["Durgabai Deshmukh South Campus", "Bhikaji Cama Place"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Bhikaji Cama Place",
+			"Neighbours": ["Sir Vishweshwaraiah Moti Bagh", "Sarojini Nagar"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Sarojini Nagar",
+			"Neighbours": ["Bhikaji Cama Place", "INA"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "INA",
+			"Neighbours": ["Sarojini Nagar", "South Extension"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "South Extension",
+			"Neighbours": ["INA", "Lajpat Nagar"],
+			"Line": "PINK"
+		},
+		
+		{
+			"Name": "Vinobapuri",
+			"Neighbours": ["Lajpat Nagar", "Ashram"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Ashram",
+			"Neighbours": ["Vinobapuri", "Hazrat Nizamuddin"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Hazrat Nizamuddin",
+			"Neighbours": ["Ashram", "Mayur Vihar - I"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Mayur Vihar Pocket 1",
+			"Neighbours": ["Mayur Vihar - I", "Trilok Puri Sanjay Lake"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Trilok Puri Sanjay Lake",
+			"Neighbours": ["Mayur Vihar Pocket 1", "Vinod Nagar East"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Vinod Nagar East",
+			"Neighbours": ["Trilok Puri Sanjay Lake", "Vinod Nagar"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Vinod Nagar",
+			"Neighbours": ["Vinod Nagar East", "IP Extension"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "IP Extension",
+			"Neighbours": ["Vinod Nagar", "Anand Vihar"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Karkarduma Court",
+			"Neighbours": ["Karkar Duma", "Krishna Nagar"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Krishna Nagar",
+			"Neighbours": ["Karkarduma Court", "East Azad Nagar"],
+			"Line": "PINK"
+		},
+
+		{
+			"Name": "East Azad Nagar",
+			"Neighbours": ["Krishna Nagar", "Welcome"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Jaffrabad",
+			"Neighbours": ["Welcome", "Maujpur"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Maujpur",
+			"Neighbours": ["Jaffrabad", "Gokul Puri"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Gokul Puri",
+			"Neighbours": ["Maujpur", "Johri Enclave"],
+			"Line": "PINK"
+		},
+		{
+			"Name": "Johri Enclave",
+			"Neighbours": ["Gokul Puri", "Shiv Vihar"],
+			"Line": "PINK"
+		},
+		{ "Name": "Shiv Vihar", "Neighbours": ["Johri Enclave"], "Line": "PINK" },
+
+		{
+			"Name": "Kashmere Gate",
+			"Neighbours": ["Lal Quila", "Tis Hazari", "Shastri Park"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Lal Quila",
+			"Neighbours": ["Kashmere Gate", "Jama Masjid"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Jama Masjid",
+			"Neighbours": ["Lal Quila", "Delhi Gate"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Delhi Gate",
+			"Neighbours": ["Jama Masjid", "ITO"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "ITO",
+			"Neighbours": ["Delhi Gate", "Mandi House"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Janpath",
+			"Neighbours": ["Mandi House", "Central Secretariat"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Central Secretariat",
+			"Neighbours": ["Janpath", "Khan Market"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Khan Market",
+			"Neighbours": ["Central Secretariat", "JLN Stadium"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "JLN Stadium",
+			"Neighbours": ["Khan Market", "Jangpura"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Jangpura",
+			"Neighbours": ["JLN Stadium", "Lajpat Nagar"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Lajpat Nagar",
+			"Neighbours": ["Jangpura", "Moolchand", "South Extension", "Vinobapuri"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Moolchand",
+			"Neighbours": ["Lajpat Nagar", "Kailash Colony"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Kailash Colony",
+			"Neighbours": ["Moolchand", "Nehru Place"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Nehru Place",
+			"Neighbours": ["Kailash Colony", "Kalkaji Mandir"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Kalkaji Mandir",
+			"Neighbours": ["Nehru Place", "Govindpuri"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Govindpuri",
+			"Neighbours": ["Kalkaji Mandir", "Harkesh Nagar Okhla"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Harkesh Nagar Okhla",
+			"Neighbours": ["Govindpuri", "Jasola-Apollo"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Jasola-Apollo",
+			"Neighbours": ["Harkesh Nagar Okhla", "Sarita Vihar"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Sarita Vihar",
+			"Neighbours": ["Jasola-Apollo", "Mohan Estate"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Mohan Estate",
+			"Neighbours": ["Sarita Vihar", "Tuglakabad"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Tuglakabad",
+			"Neighbours": ["Mohan Estate", "Badarpur Border"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Badarpur Border",
+			"Neighbours": ["Tuglakabad", "Sarai"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Sarai",
+			"Neighbours": ["Badarpur Border", "NHPC Chownk"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "NHPC Chownk",
+			"Neighbours": ["Sarai", "Mewla Maharajpur"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Mewla Maharajpur",
+			"Neighbours": ["NHPC Chownk", "Sector 28"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Sector 28",
+			"Neighbours": ["Mewla Maharajpur", "Badkal Mor"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Badkal Mor",
+			"Neighbours": ["Sector 28", "Faridabad Old"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Faridabad Old",
+			"Neighbours": ["Badkal Mor", "Neelam Chownk Ajronda"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Neelam Chownk Ajronda",
+			"Neighbours": ["Faridabad Old", "Bata Chownk"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Bata Chownk",
+			"Neighbours": ["Neelam Chownk Ajronda", "Escorts Mujesar"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Escorts Mujesar",
+			"Neighbours": ["Bata Chownk", "Sant Surdas"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Sant Surdas",
+			"Neighbours": ["Escorts Mujesar", "Raja Nahar singh marg"],
+			"Line": "VIOLET"
+		},
+		{
+			"Name": "Raja Nahar singh marg",
+			"Neighbours": ["Sant Surdas"],
+			"Line": "VIOLET"
+		}
+	]
+}
