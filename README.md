@@ -44,3 +44,4 @@ This project can be run from a web browser or the Expo client app. You may find 
 - Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
 
 ## App ScreenShots:
+![Screenshot_20211221-000503_Expo_Go](https://user-images.githubusercontent.com/35109053/146816300-a7dd8a2e-ba62-4e6d-b630-cbf3f35b19f2.png)
