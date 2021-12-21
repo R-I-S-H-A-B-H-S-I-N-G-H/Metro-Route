@@ -128,6 +128,14 @@ export default function App() {
 		path.map((station) => {
 			color.push(colorMap[map[station].Line]);
 		});
+		for (var i = 1; i < color.length - 1; i++) {
+			var pre = color[i - 1];
+			var next = color[i + 1];
+			if (pre == next) {
+				color[i] = pre;
+			}
+		}
+
 		setColorList(color);
 	};
 	useEffect(() => {

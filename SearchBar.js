@@ -41,9 +41,14 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 	const changeSuggestion = (text) => {
 		setStation(text);
 		textHandler(text);
+
 		var hintList = [];
 		setSuggestionList([]);
 		var stationNames = stationNamemap;
+		if (text === '') {
+			return;
+		}
+
 		// console.log('station name lIST ', stationNames);
 		// console.log('station name lIST ', stationNamemap);
 
