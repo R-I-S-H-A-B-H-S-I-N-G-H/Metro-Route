@@ -7,8 +7,8 @@ import {
 	FlatList,
 	TouchableOpacity,
 } from 'react-native';
-import Header from './Header';
-import SearchBar from './SearchBar';
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
 import Raw_data from './data.json';
 
 var map = [];

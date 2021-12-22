@@ -1,10 +1,11 @@
 {
 	"expo": {
-		"name": "metro-route",
+		"name": "Metro Route",
 		"slug": "metro-route",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"splash": {
+			
 			"resizeMode": "contain",
 			"backgroundColor": "#ffffff"
 		},
