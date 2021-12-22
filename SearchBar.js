@@ -34,21 +34,23 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 		setListHeight({});
 	};
 	const clickHandler = (text) => {
-		console.log('TEXT SELECTED : ', text);
+		// console.log('TEXT SELECTED : ', text);
 		staionChange(text);
 		setSuggestionList([]);
 	};
 	const changeSuggestion = (text) => {
 		setStation(text);
 		textHandler(text);
+
 		var hintList = [];
 		setSuggestionList([]);
+		setListHeight({ height: 0 });
 		var stationNames = stationNamemap;
+
 		// console.log('station name lIST ', stationNames);
 		// console.log('station name lIST ', stationNamemap);
 
-		if (stationNames === undefined) {
-			setListHeight({ height: 0 });
+		if (text === '' || stationNames === undefined) {
 			return;
 		}
 		if (text.length > 0) {
@@ -63,13 +65,13 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 			// console.log(hintList);
 		} else {
 			hintList = [];
-			console.log('text is empty');
+			// console.log('text is empty');
 		}
 		setSuggestionList(hintList);
-		setListHeight({ height: 150 });
-		// console.log(suggestions);
+		if (hintList.length > 0) {
+			setListHeight({ height: 150 });
+		} // console.log(suggestions);
 	};
-	const suggestionHandler = (text) => {};
 
 	return (
 		<View style={styles.searchWrapper}>
@@ -80,6 +82,7 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 				placeholder={placeHolder}
 			></TextInput>
 			<FlatList
+				keyboardShouldPersistTaps="handled"
 				style={[styles.suggestionList, listHeight]}
 				data={suggestionList}
 				renderItem={({ item, index }) => (
@@ -106,6 +109,9 @@ var styles = StyleSheet.create({
 		backgroundColor: 'white',
 		padding: 15,
 		borderRadius: 5,
+		fontWeight: 'bold',
+		color: 'gray',
+		fontSize: 16,
 	},
 	suggestionList: {},
 	suggestionListItem: {
