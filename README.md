@@ -46,3 +46,5 @@ This project can be run from a web browser or the Expo client app. You may find 
 ## App ScreenShots:
 ![phone](https://user-images.githubusercontent.com/35109053/146816437-b138695c-52e6-457a-935d-6b2c63b225d4.png)
 ![phone](https://user-images.githubusercontent.com/35109053/146816444-d2b772f2-8fce-4696-9b4e-252228a008ac.png)
+## App apk file
+https://drive.google.com/file/d/16QL1grbVjVQPwHDQB1VpUiSmfK2DTar-/view?usp=sharing
