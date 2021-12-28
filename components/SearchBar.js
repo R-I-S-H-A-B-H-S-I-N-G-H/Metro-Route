@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
 	View,
 	Text,
@@ -72,7 +72,9 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 			setListHeight({ height: 150 });
 		} // console.log(suggestions);
 	};
-
+	useEffect(() => {
+		setStation(station);
+	}, [station]);
 	return (
 		<View style={styles.searchWrapper}>
 			<TextInput

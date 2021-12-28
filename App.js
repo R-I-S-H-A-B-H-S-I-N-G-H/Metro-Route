@@ -20,14 +20,14 @@ colorMap['RED'] = 'red'; //red
 colorMap['PINK'] = '#fc6c85'; //pink
 colorMap['VIOLET'] = '#4C2881'; //violet
 colorMap['MAGENTA'] = '#ff00ff'; //magenta
-colorMap['YELLOW'] = '#c69f26'; //yellow
+colorMap['YELLOW'] = '#b08160'; //yellow
 
 lightcolormap['blue'] = 'lightblue'; //blue
 lightcolormap['red'] = '#ff726f'; //red
 lightcolormap['#fc6c85'] = '#ffc1cc'; //pink
 lightcolormap['#4C2881'] = '#9A6DBE'; //violet
 lightcolormap['#ff00ff'] = '#f1a7fe'; //magenta
-lightcolormap['#c69f26'] = '#fada5f'; //yellow
+lightcolormap['#b08160'] = '#fada5f'; //yellow
 
 export default function App() {
 	preload();
@@ -60,6 +60,7 @@ export default function App() {
 					setStart(text);
 				}}
 			/>
+
 			<SearchBar
 				station={dest}
 				placeHolder={'To Station'}
@@ -69,9 +70,17 @@ export default function App() {
 				}}
 			/>
 			<View style={[styles.routeList]}>
-				<View style={styles.listHeading}>
+				<TouchableOpacity
+					style={styles.listHeading}
+					onPress={() => {
+						var temp = start;
+						setStart(dest);
+						setDest(temp);
+						console.log('ROUTE SWAPPED');
+					}}
+				>
 					<Text style={styles.listHeadingText}>Route</Text>
-				</View>
+				</TouchableOpacity>
 				<FlatList
 					data={routeList}
 					renderItem={({ item, index }) => (
