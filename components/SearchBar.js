@@ -7,7 +7,7 @@ import {
 	FlatList,
 	TouchableOpacity,
 } from 'react-native';
-import Raw_data from './data.json';
+import Raw_data from '../assets/data.json';
 var stationNamemap = [];
 const preload = () => {
 	if (stationNamemap.length !== 0) {

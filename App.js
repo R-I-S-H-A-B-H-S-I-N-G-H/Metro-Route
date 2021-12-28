@@ -9,11 +9,73 @@ import {
 } from 'react-native';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
-import Raw_data from './data.json';
+import Raw_data from './assets/data.json';
 
 var map = [];
 var loaded = false;
 var lightcolormap = [];
+
+//creating the metro data
+function createMetroData() {
+	var metroline = [
+		'Samaypur Badli',
+		'Rohini Sector 18',
+		'Haiderpur Badli Mor',
+		'Jahangirpuri',
+		'Adarsh Nagar',
+		'Azadpur',
+		'Model Town',
+		'GTB Nagar',
+		'Viswavidyalaya',
+		'Vidhan Sabha',
+		'Civil Lines',
+		'Kashmere Gate',
+		'Chandhni Chowk',
+		'Chawri Bazar',
+		'New Delhi',
+		'Rajiv Chowk',
+		'Patel Chowk',
+		'Central Secretariat',
+		'Udyog Bhawan',
+		'Lok Kalyan Marg',
+		'Jorbagh',
+		'INA',
+		'AIIMS',
+		'Green Park',
+		'Hauz Khas',
+		'MalviaNagar',
+		'Saket',
+		'Qutab Minar',
+		'Chhattarpur',
+		'Sultanpur',
+		'Ghotorni',
+		'Arjan Garh',
+		'Guru Dronacharya',
+		'Sikandarpur',
+		'MG Road',
+		'IFFCO Chowk',
+		'Huda City Centre',
+	];
+	/*
+		{
+			"Name": "Noida Electronic City",
+			"Neighbours": ["Noida Sector 62"]
+		},
+	*/
+	for (var i = 0; i < metroline.length; i++) {
+		var name = '"Name":' + '"' + metroline[i] + '",';
+		var neighbour = '"Neighbours":[';
+		if (i === 0) {
+			neighbour += '"' + metroline[i + 1] + '"]';
+		} else if (i === metroline.length - 1) {
+			neighbour += '"' + metroline[i - 1] + '"]';
+		} else {
+			neighbour += '"' + metroline[i - 1] + '",';
+			neighbour += '"' + metroline[i + 1] + '"]';
+		}
+		console.log('{', name, neighbour, ',"Line":' + '"YELLOW"', '},');
+	}
+}
 
 const preload = () => {
 	if (loaded) {
@@ -30,6 +92,8 @@ const preload = () => {
 };
 
 export default function App() {
+	createMetroData();
+	// return;
 	preload();
 	var [routeList, setRouteList] = useState([]);
 	var [colorList, setColorList] = useState([]);
