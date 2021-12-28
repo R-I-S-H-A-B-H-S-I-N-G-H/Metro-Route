@@ -14,86 +14,22 @@ import Raw_data from './assets/data.json';
 var map = [];
 var loaded = false;
 var lightcolormap = [];
+var colorMap = [];
+colorMap['BLUE'] = 'blue'; //blue
+colorMap['RED'] = 'red'; //red
+colorMap['PINK'] = '#fc6c85'; //pink
+colorMap['VIOLET'] = '#4C2881'; //violet
+colorMap['MAGENTA'] = '#ff00ff'; //magenta
+colorMap['YELLOW'] = '#c69f26'; //yellow
 
-//creating the metro data
-function createMetroData() {
-	var metroline = [
-		'Samaypur Badli',
-		'Rohini Sector 18',
-		'Haiderpur Badli Mor',
-		'Jahangirpuri',
-		'Adarsh Nagar',
-		'Azadpur',
-		'Model Town',
-		'GTB Nagar',
-		'Viswavidyalaya',
-		'Vidhan Sabha',
-		'Civil Lines',
-		'Kashmere Gate',
-		'Chandhni Chowk',
-		'Chawri Bazar',
-		'New Delhi',
-		'Rajiv Chowk',
-		'Patel Chowk',
-		'Central Secretariat',
-		'Udyog Bhawan',
-		'Lok Kalyan Marg',
-		'Jorbagh',
-		'INA',
-		'AIIMS',
-		'Green Park',
-		'Hauz Khas',
-		'MalviaNagar',
-		'Saket',
-		'Qutab Minar',
-		'Chhattarpur',
-		'Sultanpur',
-		'Ghotorni',
-		'Arjan Garh',
-		'Guru Dronacharya',
-		'Sikandarpur',
-		'MG Road',
-		'IFFCO Chowk',
-		'Huda City Centre',
-	];
-	/*
-		{
-			"Name": "Noida Electronic City",
-			"Neighbours": ["Noida Sector 62"]
-		},
-	*/
-	for (var i = 0; i < metroline.length; i++) {
-		var name = '"Name":' + '"' + metroline[i] + '",';
-		var neighbour = '"Neighbours":[';
-		if (i === 0) {
-			neighbour += '"' + metroline[i + 1] + '"]';
-		} else if (i === metroline.length - 1) {
-			neighbour += '"' + metroline[i - 1] + '"]';
-		} else {
-			neighbour += '"' + metroline[i - 1] + '",';
-			neighbour += '"' + metroline[i + 1] + '"]';
-		}
-		console.log('{', name, neighbour, ',"Line":' + '"YELLOW"', '},');
-	}
-}
-
-const preload = () => {
-	if (loaded) {
-		console.log('MAP IS ALREADY FULL');
-		return;
-	}
-	loaded = true;
-	// map = [];
-	var data = Raw_data['stations'];
-	for (var i = 0; i < data.length; i++) {
-		var station = data[i];
-		map[station.Name] = station;
-	}
-};
+lightcolormap['blue'] = 'lightblue'; //blue
+lightcolormap['red'] = '#ff726f'; //red
+lightcolormap['#fc6c85'] = '#ffc1cc'; //pink
+lightcolormap['#4C2881'] = '#9A6DBE'; //violet
+lightcolormap['#ff00ff'] = '#f1a7fe'; //magenta
+lightcolormap['#c69f26'] = '#fada5f'; //yellow
 
 export default function App() {
-	createMetroData();
-	// return;
 	preload();
 	var [routeList, setRouteList] = useState([]);
 	var [colorList, setColorList] = useState([]);
@@ -106,96 +42,11 @@ export default function App() {
 	//suggestion
 
 	//bfs
-	const findRoute = (a, b) => {
-		console.log('FIND ROUTE WORKING');
-		var max = 1000;
-		a = map[a];
-		b = map[b];
-		if (a === undefined || b === undefined || a.Name === b.Name) {
-			// console.error('INPUT NOT WRITE');
-			// console.log(a);
-			// console.log(b);
 
-			return;
-		}
-
-		// console.log('START : ', a);
-		// console.log('END : ', b);
-
-		// bfs algo
-		// return;
-		var parent = [];
-		var q = [];
-		var visited = [];
-		q.push(a);
-		while (q.length > 0) {
-			var ele = q.shift();
-			// console.log('ele : ', ele);
-			max--;
-			if (ele === b) {
-				// console.log('FOUND');
-				max = 1000;
-				break;
-			}
-			if (max < 0) {
-				console.log('max ', max);
-				return null;
-			}
-			visited[ele.Name] = true;
-			var neighbour = ele.Neighbours;
-			// console.log('neighbours : ', neighbour);
-			// console.log('length : ', neighbour.length);
-			for (var i = 0; i < neighbour.length; i++) {
-				max--;
-				if (max < 0) {
-					return null;
-				}
-				var n = map[neighbour[i]];
-				// console.log('n : ', n);
-				if (n === undefined) {
-					return;
-				}
-				if (visited[n.Name] !== true) {
-					parent[n.Name] = ele.Name;
-					visited[n.Name] = true;
-					q.push(n);
-				}
-			}
-		}
-		// console.warn('out');
-		var cur = parent[b.Name];
-		var path = [];
-		var color = [];
-		path.push(b.Name);
-		while (cur !== a.Name && max > 0) {
-			// console.log(cur);
-			path.push(cur);
-			cur = parent[cur];
-		}
-		path.push(a.Name);
-		path.reverse();
-		console.log('PATH', path);
-		setRouteList(path);
-
-		var color = [];
-		var colorMap = [];
-		colorMap['BLUE'] = 'blue'; //blue
-		colorMap['RED'] = 'red'; //red
-		colorMap['PINK'] = '#b279a7'; //pink
-		colorMap['VIOLET'] = '#7851a9'; //violet
-		lightcolormap['blue'] = 'lightblue'; //blue
-		lightcolormap['red'] = '#ff726f'; //red
-		lightcolormap['#b279a7'] = '#ffc1cc'; //pink
-		lightcolormap['#7851a9'] = '#c54b8c'; //violet
-
-		setColorList([]);
-		path.map((station) => {
-			color.push(colorMap[map[station].Line]);
-		});
-		setColorList(color);
-	};
 	useEffect(() => {
-		findRoute(start, dest);
+		var path = findRoute(start, dest);
+		setRouteList(path);
+		setColorList(populateColordata(path));
 	}, [start, dest]);
 
 	return (
@@ -236,7 +87,38 @@ export default function App() {
 							key={(Math.random() * 10).toString + item}
 							onPress={() => clickHandler(item)}
 						>
-							<Text>{item}</Text>
+							<Text style={[{ fontWeight: 'bold', fontSize: 16 }]}>{item}</Text>
+							{index !== 0 &&
+							index !== routeList.length - 1 &&
+							colorList[index] != colorList[index + 1] ? (
+								<View
+									style={[
+										{
+											backgroundColor:
+												lightcolormap[colorMap[map[routeList[index + 1]].Line]],
+											paddingHorizontal: 10,
+											marginTop: 5,
+											paddingVertical: 3,
+											borderRadius: 10,
+											borderWidth: 2,
+											borderColor: colorMap[map[routeList[index + 1]].Line],
+										},
+									]}
+								>
+									<Text
+										style={[
+											{
+												color: colorMap[map[routeList[index + 1]].Line],
+												fontWeight: 'bold',
+											},
+										]}
+									>
+										CHANGE HERE FOR {map[routeList[index + 1]].Line} LINE
+									</Text>
+								</View>
+							) : (
+								<View></View>
+							)}
 						</View>
 					)}
 				/>
@@ -293,3 +175,112 @@ var styles = StyleSheet.create({
 		borderRadius: 10,
 	},
 });
+
+const preload = () => {
+	if (loaded) {
+		console.log('MAP IS ALREADY FULL');
+		return;
+	}
+	loaded = true;
+	// map = [];
+	var data = Raw_data['stations'];
+	for (var i = 0; i < data.length; i++) {
+		var station = data[i];
+		map[station.Name] = station;
+	}
+};
+
+const findRoute = (a, b) => {
+	console.log('FIND ROUTE WORKING');
+	var max = 1000;
+	a = map[a];
+	b = map[b];
+	if (a === undefined || b === undefined || a.Name === b.Name) {
+		// console.error('INPUT NOT WRITE');
+		// console.log(a);
+		// console.log(b);
+
+		return [];
+	}
+
+	// console.log('START : ', a);
+	// console.log('END : ', b);
+
+	// bfs algo
+	// return;
+	var parent = [];
+	var q = [];
+	var visited = [];
+	q.push(a);
+	while (q.length > 0) {
+		var ele = q.shift();
+		// console.log('ele : ', ele);
+		max--;
+		if (ele === b) {
+			// console.log('FOUND');
+			max = 1000;
+			break;
+		}
+		if (max < 0) {
+			console.log('max ', max);
+			return null;
+		}
+		visited[ele.Name] = true;
+		var neighbour = ele.Neighbours;
+		// console.log('neighbours : ', neighbour);
+		// console.log('length : ', neighbour.length);
+		for (var i = 0; i < neighbour.length; i++) {
+			max--;
+			if (max < 0) {
+				return null;
+			}
+			var n = map[neighbour[i]];
+			// console.log('n : ', n);
+			if (n === undefined) {
+				return;
+			}
+			if (visited[n.Name] !== true) {
+				parent[n.Name] = ele.Name;
+				visited[n.Name] = true;
+				q.push(n);
+			}
+		}
+	}
+	// console.warn('out');
+	var cur = parent[b.Name];
+	var path = [];
+	var color = [];
+	path.push(b.Name);
+	while (cur !== a.Name && max > 0) {
+		// console.log(cur);
+		path.push(cur);
+		cur = parent[cur];
+	}
+	path.push(a.Name);
+	path.reverse();
+	console.log('PATH', path);
+	return path;
+};
+const populateColordata = (path) => {
+	if (path === undefined || path.length == 0) {
+		return [];
+	}
+	var color = [];
+	path.map((station) => {
+		color.push(colorMap[map[station].Line]);
+	});
+
+	//fixing junctions
+	for (var i = 1; i < color.length - 1; i++) {
+		var pre = color[i - 1];
+		var next = color[i + 1];
+		if (pre == next) {
+			color[i] = pre;
+		}
+	}
+	if (color.length > 1) {
+		color[0] = color[1];
+		color[color.length - 1] = color[color.length - 2];
+	}
+	return color;
+};
