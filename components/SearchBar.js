@@ -94,11 +94,23 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 				data={suggestionList}
 				renderItem={({ item, index }) => (
 					<TouchableOpacity
-						key={(Math.random() * 10).toString + item}
+						key={
+							(Math.random() * 10).toString +
+							item +
+							(Math.random() * 10).toString +
+							item
+						}
 						onPress={() => clickHandler(item)}
 						style={styles.suggestionListItem}
 					>
-						<Text key={(Math.random() * 10 + index).toString + item}>
+						<Text
+							key={
+								Math.random() * 10 +
+								index +
+								(Math.random() * 100).toString +
+								item
+							}
+						>
 							{item}
 						</Text>
 					</TouchableOpacity>

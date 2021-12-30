@@ -187,7 +187,7 @@ var styles = StyleSheet.create({
 
 const preload = () => {
 	if (loaded) {
-		console.log('MAP IS ALREADY FULL');
+		// console.log('MAP IS ALREADY FULL');
 		return;
 	}
 	loaded = true;
@@ -200,10 +200,10 @@ const preload = () => {
 };
 
 const findRoute = (station_a, station_b, rList) => {
-	console.log('FIND ROUTE WORKING');
+	// console.log('FIND ROUTE WORKING');
 	var max = 1000;
-	a = map[station_a];
-	b = map[station_b];
+	const a = map[station_a];
+	const b = map[station_b];
 	if (a === undefined || b === undefined || a.Name === b.Name) {
 		// console.error('INPUT NOT WRITE');
 		// console.log(a);
@@ -213,7 +213,6 @@ const findRoute = (station_a, station_b, rList) => {
 	}
 	if (rList !== undefined && rList.length !== 0) {
 		if (rList[0] === station_b && rList[rList.length - 1] === station_a) {
-			
 			rList.reverse();
 			return rList;
 		}
@@ -234,7 +233,18 @@ const findRoute = (station_a, station_b, rList) => {
 		max--;
 		if (ele === b) {
 			// console.log('FOUND');
-			max = 1000;
+			// console.log(max);
+			// return [];
+			var cur = parent[b.Name];
+			var path = [];
+			path.push(b.Name);
+			while (cur !== a.Name && max > 0) {
+				path.push(cur);
+				cur = parent[cur];
+			}
+			path.push(a.Name);
+			path.reverse();
+			return path;
 		}
 		if (max < 0) {
 			console.log('max ', max);
@@ -261,17 +271,7 @@ const findRoute = (station_a, station_b, rList) => {
 			}
 		}
 	}
-	// return [];
-	var cur = parent[b.Name];
-	var path = [];
-	path.push(b.Name);
-	while (cur !== a.Name && max > 0) {
-		path.push(cur);
-		cur = parent[cur];
-	}
-	path.push(a.Name);
-	path.reverse();
-	return path;
+	return [];
 };
 const populateColordata = (path) => {
 	if (path === undefined || path.length == 0) {
@@ -291,6 +291,6 @@ const populateColordata = (path) => {
 		}
 	}
 	color[0] = color[1];
-	color[color.length - 1] = color[color.length - 2];
+	// color[color.length - 1] = color[color.length - 2];
 	return color;
 };
