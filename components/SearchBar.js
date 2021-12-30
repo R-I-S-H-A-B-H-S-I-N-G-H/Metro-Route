@@ -54,10 +54,15 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 			return;
 		}
 		if (text.length > 0) {
-			var regex;
-			regex = new RegExp(`${text}`, 'gi');
+			// var regex;
+			// regex = new RegExp(`${text}`, 'gi');
 
-			hintList = stationNamemap.sort().filter((word) => regex.test(word));
+			// hintList = stationNamemap.filter((word) => regex.test(word));
+			hintList = stationNamemap.filter((station) => {
+				if (station.toLowerCase().includes(text.toLowerCase())) {
+					return station;
+				}
+			});
 
 			if (hintList == undefined || hintList.length == 0) {
 				return;
@@ -89,11 +94,23 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 				data={suggestionList}
 				renderItem={({ item, index }) => (
 					<TouchableOpacity
-						key={(Math.random() * 10).toString + item}
+						key={
+							(Math.random() * 10).toString +
+							item +
+							(Math.random() * 10).toString +
+							item
+						}
 						onPress={() => clickHandler(item)}
 						style={styles.suggestionListItem}
 					>
-						<Text key={(Math.random() * 10 + index).toString + item}>
+						<Text
+							key={
+								Math.random() * 10 +
+								index +
+								(Math.random() * 100).toString +
+								item
+							}
+						>
 							{item}
 						</Text>
 					</TouchableOpacity>
