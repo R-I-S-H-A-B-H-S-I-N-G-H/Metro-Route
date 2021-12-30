@@ -44,7 +44,7 @@ export default function App() {
 	//bfs
 
 	useEffect(() => {
-		var path = findRoute(start, dest);
+		var path = findRoute(start, dest, routeList);
 		setRouteList(path);
 		setColorList(populateColordata(path));
 	}, [start, dest]);
@@ -199,17 +199,24 @@ const preload = () => {
 	}
 };
 
-const findRoute = (a, b) => {
+const findRoute = (station_a, station_b, rList) => {
 	console.log('FIND ROUTE WORKING');
 	var max = 1000;
-	a = map[a];
-	b = map[b];
+	a = map[station_a];
+	b = map[station_b];
 	if (a === undefined || b === undefined || a.Name === b.Name) {
 		// console.error('INPUT NOT WRITE');
 		// console.log(a);
 		// console.log(b);
 
 		return [];
+	}
+	if (rList !== undefined && rList.length !== 0) {
+		if (rList[0] === station_b && rList[rList.length - 1] === station_a) {
+			
+			rList.reverse();
+			return rList;
+		}
 	}
 
 	// console.log('START : ', a);
@@ -228,7 +235,6 @@ const findRoute = (a, b) => {
 		if (ele === b) {
 			// console.log('FOUND');
 			max = 1000;
-			break;
 		}
 		if (max < 0) {
 			console.log('max ', max);
@@ -255,19 +261,16 @@ const findRoute = (a, b) => {
 			}
 		}
 	}
-	// console.warn('out');
+	// return [];
 	var cur = parent[b.Name];
 	var path = [];
-	var color = [];
 	path.push(b.Name);
 	while (cur !== a.Name && max > 0) {
-		// console.log(cur);
 		path.push(cur);
 		cur = parent[cur];
 	}
 	path.push(a.Name);
 	path.reverse();
-	console.log('PATH', path);
 	return path;
 };
 const populateColordata = (path) => {
@@ -287,9 +290,7 @@ const populateColordata = (path) => {
 			color[i] = pre;
 		}
 	}
-	if (color.length > 1) {
-		color[0] = color[1];
-		color[color.length - 1] = color[color.length - 2];
-	}
+	color[0] = color[1];
+	color[color.length - 1] = color[color.length - 2];
 	return color;
 };

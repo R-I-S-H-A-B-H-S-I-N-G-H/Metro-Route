@@ -54,10 +54,15 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 			return;
 		}
 		if (text.length > 0) {
-			var regex;
-			regex = new RegExp(`${text}`, 'gi');
+			// var regex;
+			// regex = new RegExp(`${text}`, 'gi');
 
-			hintList = stationNamemap.sort().filter((word) => regex.test(word));
+			// hintList = stationNamemap.filter((word) => regex.test(word));
+			hintList = stationNamemap.filter((station) => {
+				if (station.toLowerCase().includes(text.toLowerCase())) {
+					return station;
+				}
+			});
 
 			if (hintList == undefined || hintList.length == 0) {
 				return;
