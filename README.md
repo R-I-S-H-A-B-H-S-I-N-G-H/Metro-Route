@@ -44,11 +44,11 @@ This project can be run from a web browser or the Expo client app. You may find 
 - Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
 
 ## App ScreenShots:
-![Screenshot_20220112-191544_Metro_Route](https://user-images.githubusercontent.com/35109053/149182545-3377a30e-8d56-4879-a459-e8ee211d2a18.png)
+<img src='./assets/metross1.png' width=500>
 
-![Screenshot_20220112-191556_Metro_Route](https://user-images.githubusercontent.com/35109053/149182684-48d33576-2552-4e2f-a8bc-58e850f14eb6.png)
+<img src='./assets/metross2.png' width=500>
 
-![Screenshot_20220112-191708_Metro_Route](https://user-images.githubusercontent.com/35109053/149182708-dc966d51-6473-4e77-a6f1-73a9a9993382.png)
+<img src='./assets/metross3.png' width=500>
 
 
 
