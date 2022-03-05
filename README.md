@@ -44,11 +44,11 @@ This project can be run from a web browser or the Expo client app. You may find 
 - Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
 
 ## App ScreenShots:
-<img src='./assets/metross1.png' width=500>
+<img src='./assets/metross1.png' width=300>
 
-<img src='./assets/metross2.png' width=500>
+<img src='./assets/metross2.png' width=300>
 
-<img src='./assets/metross3.png' width=500>
+<img src='./assets/metross3.png' width=300>
 
 
 
