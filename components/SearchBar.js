@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
 	View,
 	Text,
@@ -6,8 +6,8 @@ import {
 	StyleSheet,
 	FlatList,
 	TouchableOpacity,
-} from 'react-native';
-import Raw_data from '../assets/data.json';
+} from "react-native";
+import Raw_data from "../assets/data.json";
 var stationNamemap = [];
 const preload = () => {
 	if (stationNamemap.length !== 0) {
@@ -15,7 +15,7 @@ const preload = () => {
 	}
 
 	stationNamemap = [];
-	var data = Raw_data['stations'];
+	var data = Raw_data["stations"];
 	for (var i = 0; i < data.length; i++) {
 		var station = data[i];
 		stationNamemap.push(station.Name);
@@ -26,7 +26,11 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 	preload();
 	var [stationName, setStation] = useState(station);
 	var [suggestionList, setSuggestionList] = useState([]);
-	var [listHeight, setListHeight] = useState({});
+	var [listHeight, setListHeight] = useState({
+		height: 0,
+		padding: 0,
+		margin: 0,
+	});
 
 	const staionChange = (text) => {
 		textHandler(text);
@@ -44,13 +48,17 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 
 		var hintList = [];
 		setSuggestionList([]);
-		setListHeight({ height: 0 });
+		setListHeight({
+			height: 0,
+			padding: 0,
+			margin: 0,
+		});
 		var stationNames = stationNamemap;
 
 		// console.log('station name lIST ', stationNames);
 		// console.log('station name lIST ', stationNamemap);
 
-		if (text === '' || stationNames === undefined) {
+		if (text === "" || stationNames === undefined) {
 			return;
 		}
 		if (text.length > 0) {
@@ -104,6 +112,9 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 						style={styles.suggestionListItem}
 					>
 						<Text
+							style={{
+								fontWeight: "bold",
+							}}
 							key={
 								Math.random() * 10 +
 								index +
@@ -121,22 +132,29 @@ export default function SearchBar({ placeHolder, station, textHandler }) {
 }
 var styles = StyleSheet.create({
 	searchWrapper: {
-		backgroundColor: 'orange',
+		backgroundColor: "orange",
 		padding: 10,
 	},
 	search: {
-		backgroundColor: 'white',
+		backgroundColor: "white",
 		padding: 15,
 		borderRadius: 5,
-		fontWeight: 'bold',
-		color: 'gray',
+		fontWeight: "bold",
+		color: "gray",
 		fontSize: 16,
 	},
-	suggestionList: {},
+	suggestionList: {
+		paddingHorizontal: 2,
+		backgroundColor: "#FFD580",
+		borderBottomLeftRadius: 6,
+		borderBottomRightRadius: 6,
+	},
 	suggestionListItem: {
-		margin: 1,
-		padding: 10,
-		backgroundColor: 'lightblue',
-		alignItems: 'center',
+		marginHorizontal: 8,
+		marginVertical: 4,
+		padding: 12,
+		backgroundColor: "white",
+		alignItems: "center",
+		borderRadius: 6,
 	},
 });
