@@ -83,7 +83,7 @@ export default function App() {
               borderRadius: 6,
               padding: 2,
               paddingHorizontal: 4,
-              borderWidth: 1,
+              borderWidth: 2,
               marginVertical: 2,
             }}
           >
@@ -104,7 +104,7 @@ export default function App() {
               borderRadius: 6,
               padding: 2,
               paddingHorizontal: 4,
-              borderWidth: 1,
+              borderWidth: 2,
               marginVertical: 2,
             }}
           >
@@ -210,7 +210,7 @@ var styles = StyleSheet.create({
     padding: 10,
     marginHorizontal: "30%",
     borderColor: "red",
-    borderWidth: 1,
+    borderWidth: 2.2,
     borderRadius: 10,
     marginBottom: 5,
   },
