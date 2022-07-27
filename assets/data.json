@@ -6,7 +6,9 @@
       "Index": 1,
       "Name": "Vaishali",
       "Neighbours": ["Kaushambi"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.33974, 
+      "latitude": 28.64997
     },
     {
       "FromTo": [],
@@ -14,7 +16,9 @@
       "Index": 2,
       "Name": "Kaushambi",
       "Neighbours": ["Vaishali", "Anand Vihar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.32432, 
+      "latitude": 28.64544
     },
     {
       "FromTo": [],
@@ -22,7 +26,9 @@
       "Index": 3,
       "Name": "Anand Vihar",
       "Neighbours": ["Kaushambi", "Karkar Duma", "IP Extension"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.31603, 
+      "latitude": 28.64695
     },
     {
       "FromTo": [],
@@ -30,7 +36,9 @@
       "Index": 4,
       "Name": "Karkar Duma",
       "Neighbours": ["Anand Vihar", "Preet Vihar", "Krishna Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.30558, 
+      "latitude": 28.64849
     },
     {
       "FromTo": [],
@@ -38,7 +46,9 @@
       "Index": 5,
       "Name": "Preet Vihar",
       "Neighbours": ["Karkar Duma", "Nirman Vihar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.29543, 
+      "latitude": 28.64171
     },
     {
       "FromTo": [],
@@ -46,7 +56,9 @@
       "Index": 6,
       "Name": "Nirman Vihar",
       "Neighbours": ["Preet Vihar", "Laxmi Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.28683, 
+      "latitude": 28.63663
     },
 
     {
@@ -55,7 +67,9 @@
       "Index": 7,
       "Name": "Laxmi Nagar",
       "Neighbours": ["Nirman Vihar", "Yamuna Bank"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.27749, 
+      "latitude": 28.63064
     },
 
     {
@@ -64,7 +78,7 @@
       "Index": -8,
       "Name": "Noida Electronic City",
       "Neighbours": ["Noida Sector 62"],
-      "Line": "BLUE"
+      "Line": "BLUE",
     },
     {
       "FromTo": [],
@@ -112,7 +126,9 @@
       "Index": -2,
       "Name": "Noida City Centre",
       "Neighbours": ["Noida Sector 34", "Golf Course"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.35608, 
+      "latitude": 28.57466
     },
     {
       "FromTo": [],
@@ -120,7 +136,9 @@
       "Index": -1,
       "Name": "Golf Course",
       "Neighbours": ["Noida City Centre", "Botanical Garden"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.34598, 
+      "latitude": 28.56714
     },
     {
       "FromTo": [],
@@ -128,7 +146,9 @@
       "Index": 0,
       "Name": "Botanical Garden",
       "Neighbours": ["Golf Course", "Noida Sector 18", "Okhla Bird Sanctuary"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.33420, 
+      "latitude": 28.56409
     },
     {
       "FromTo": [],
@@ -136,7 +156,9 @@
       "Index": 1,
       "Name": "Noida Sector 18",
       "Neighbours": ["Botanical Garden", "Noida Sector 16"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.32612, 
+      "latitude": 28.57081
     },
     {
       "FromTo": [],
@@ -144,7 +166,9 @@
       "Index": 2,
       "Name": "Noida Sector 16",
       "Neighbours": ["Noida Sector 18", "Noida Sector 15"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.31757, 
+      "latitude": 28.57819
     },
     {
       "FromTo": [],
@@ -152,7 +176,9 @@
       "Index": 3,
       "Name": "Noida Sector 15",
       "Neighbours": ["Noida Sector 16", "New Ashok Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.31139, 
+      "latitude": 28.58512
     },
     {
       "FromTo": [],
@@ -160,7 +186,9 @@
       "Index": 4,
       "Name": "New Ashok Nagar",
       "Neighbours": ["Noida Sector 15", "Mayur Vihar Ext"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.30204, 
+      "latitude": 28.58916
     },
     {
       "FromTo": [],
@@ -168,7 +196,10 @@
       "Index": 5,
       "Name": "Mayur Vihar Ext",
       "Neighbours": ["New Ashok Nagar", "Mayur Vihar - I"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.29455, 
+      "latitude": 28.59428
+      
     },
     {
       "FromTo": [],
@@ -181,7 +212,9 @@
         "Hazrat Nizamuddin",
         "Mayur Vihar Pocket 1"
       ],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.28925, 
+      "latitude": 28.60442
     },
     {
       "FromTo": [],
@@ -189,7 +222,9 @@
       "Index": 7,
       "Name": "Akshardham",
       "Neighbours": ["Mayur Vihar - I", "Yamuna Bank"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.27869, 
+      "latitude": 28.61806
     },
     {
       "FromTo": [],
@@ -197,7 +232,9 @@
       "Index": 8,
       "Name": "Yamuna Bank",
       "Neighbours": ["Akshardham", "Indraprasta", "Laxmi Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.26792, 
+      "latitude": 28.62331
     },
     {
       "FromTo": [],
@@ -205,7 +242,9 @@
       "Index": 9,
       "Name": "Indraprasta",
       "Neighbours": ["Yamuna Bank", "Supreme Court"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.24993, 
+      "latitude": 28.62051
     },
     {
       "FromTo": [],
@@ -213,7 +252,8 @@
       "Index": 10,
       "Name": "Supreme Court",
       "Neighbours": ["Indraprasta", "Mandi House"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      
     },
     {
       "FromTo": [],
@@ -221,7 +261,9 @@
       "Index": 11,
       "Name": "Mandi House",
       "Neighbours": ["Supreme Court", "Barakhamba"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.23410, 
+      "latitude": 28.62588
     },
     {
       "FromTo": [],
@@ -229,7 +271,9 @@
       "Index": 12,
       "Name": "Barakhamba",
       "Neighbours": ["Mandi House", "Rajiv Chowk"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.22436, 
+      "latitude": 28.63003
     },
     {
       "FromTo": [],
@@ -237,7 +281,9 @@
       "Index": 13,
       "Name": "Rajiv Chowk",
       "Neighbours": ["Barakhamba", "RK Ashram Marg"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.21826, 
+      "latitude": 28.63282
     },
     {
       "FromTo": [],
@@ -245,7 +291,9 @@
       "Index": 14,
       "Name": "RK Ashram Marg",
       "Neighbours": ["Rajiv Chowk", "Jhandewalan"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.20840, 
+      "latitude": 28.63923
     },
     {
       "FromTo": [],
@@ -253,7 +301,9 @@
       "Index": 15,
       "Name": "Jhandewalan",
       "Neighbours": ["RK Ashram Marg", "Karol Bagh"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.19988, 
+      "latitude": 28.64427
     },
     {
       "FromTo": [],
@@ -261,7 +311,9 @@
       "Index": 16,
       "Name": "Karol Bagh",
       "Neighbours": ["Jhandewalan", "Rajendra Place"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.18855, 
+      "latitude": 28.64400
     },
     {
       "FromTo": [],
@@ -269,7 +321,9 @@
       "Index": 17,
       "Name": "Rajendra Place",
       "Neighbours": ["Karol Bagh", "Patel Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.17815, 
+      "latitude": 28.64250
     },
     {
       "FromTo": [],
@@ -277,7 +331,9 @@
       "Index": 18,
       "Name": "Patel Nagar",
       "Neighbours": ["Rajendra Place", "Shadi Pur"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.16929, 
+      "latitude": 28.64498
     },
     {
       "FromTo": [],
@@ -285,7 +341,9 @@
       "Index": 19,
       "Name": "Shadi Pur",
       "Neighbours": ["Patel Nagar", "Kirti Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.15824, 
+      "latitude": 28.65160
     },
     {
       "FromTo": [],
@@ -293,7 +351,9 @@
       "Index": 20,
       "Name": "Kirti Nagar",
       "Neighbours": ["Shadi Pur", "Moti Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.15057, 
+      "latitude": 28.65575
     },
     {
       "FromTo": [],
@@ -301,7 +361,9 @@
       "Index": 21,
       "Name": "Moti Nagar",
       "Neighbours": ["Kirti Nagar", "Ramesh Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.14248, 
+      "latitude": 28.65784
     },
     {
       "FromTo": [],
@@ -309,7 +371,9 @@
       "Index": 22,
       "Name": "Ramesh Nagar",
       "Neighbours": ["Moti Nagar", "Rajouri Garden"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.13164, 
+      "latitude": 28.65274
     },
     {
       "FromTo": [],
@@ -322,7 +386,9 @@
         "ESI Hospital",
         "Maya Puri"
       ],
-      "Line": "BLUE"
+      "Line": "BLUE",
+       "longitude": 77.12270, 
+       "latitude": 28.64902
     },
     {
       "FromTo": [],
@@ -330,7 +396,9 @@
       "Index": 24,
       "Name": "Tagore Garden",
       "Neighbours": ["Rajouri Garden", "Subash Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.11284, 
+      "latitude": 28.64379
     },
     {
       "FromTo": [],
@@ -338,7 +406,9 @@
       "Index": 25,
       "Name": "Subash Nagar",
       "Neighbours": ["Tagore Garden", "Tilak Nagar"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.10495, 
+      "latitude": 28.64039
     },
     {
       "FromTo": [],
@@ -346,7 +416,9 @@
       "Index": 26,
       "Name": "Tilak Nagar",
       "Neighbours": ["Subash Nagar", "Janak Puri East"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.09648, 
+      "latitude": 28.63657
     },
     {
       "FromTo": [],
@@ -354,7 +426,9 @@
       "Index": 27,
       "Name": "Janak Puri East",
       "Neighbours": ["Tilak Nagar", "Janak Puri West"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.08669, 
+      "latitude": 28.63305
     },
     {
       "FromTo": [],
@@ -362,7 +436,9 @@
       "Index": 28,
       "Name": "Janak Puri West",
       "Neighbours": ["Janak Puri East", "Uttam Nagar East", "Dabri Mor"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.07767, 
+      "latitude": 28.62943
     },
     {
       "FromTo": [],
@@ -370,7 +446,9 @@
       "Index": 29,
       "Name": "Uttam Nagar East",
       "Neighbours": ["Janak Puri West", "Uttam Nagar West"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.06530, 
+      "latitude": 28.62481
     },
     {
       "FromTo": [],
@@ -378,7 +456,9 @@
       "Index": 30,
       "Name": "Uttam Nagar West",
       "Neighbours": ["Uttam Nagar East", "Nawada"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.05585, 
+      "latitude": 28.62177
     },
 
     {
@@ -387,7 +467,9 @@
       "Index": 31,
       "Name": "Nawada",
       "Neighbours": ["Uttam Nagar West", "Dwaraka Mor"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.04514, 
+      "latitude": 28.62025
     },
     {
       "FromTo": [],
@@ -395,7 +477,9 @@
       "Index": 32,
       "Name": "Dwaraka Mor",
       "Neighbours": ["Nawada", "Dwarka"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.03326, 
+      "latitude": 28.61932
     },
     {
       "FromTo": [],
@@ -403,7 +487,9 @@
       "Index": 33,
       "Name": "Dwarka",
       "Neighbours": ["Dwaraka Mor", "Dwarka Sector - 14"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.02197, 
+      "latitude": 28.61564
     },
     {
       "FromTo": [],
@@ -411,7 +497,9 @@
       "Index": 34,
       "Name": "Dwarka Sector - 14",
       "Neighbours": ["Dwarka", "Dwarka Sector - 13"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.02588, 
+      "latitude": 28.60223
     },
     {
       "FromTo": [],
@@ -419,7 +507,9 @@
       "Index": 35,
       "Name": "Dwarka Sector - 13",
       "Neighbours": ["Dwarka Sector - 14", "Dwarka Sector - 12"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.03326, 
+      "latitude": 28.59722
     },
     {
       "FromTo": [],
@@ -427,7 +517,9 @@
       "Index": 36,
       "Name": "Dwarka Sector - 12",
       "Neighbours": ["Dwarka Sector - 13", "Dwarka Sector - 11"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.04051,
+      "latitude": 28.59232
     },
     {
       "FromTo": [],
@@ -435,7 +527,9 @@
       "Index": 37,
       "Name": "Dwarka Sector - 11",
       "Neighbours": ["Dwarka Sector - 12", "Dwarka Sector - 10"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.04929, 
+      "latitude": 28.58657
     },
     {
       "FromTo": [],
@@ -443,7 +537,9 @@
       "Index": 38,
       "Name": "Dwarka Sector - 10",
       "Neighbours": ["Dwarka Sector - 11", "Dwarka Sector - 9"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.05682, 
+      "latitude": 28.58068
     },
     {
       "FromTo": [],
@@ -451,7 +547,9 @@
       "Index": 39,
       "Name": "Dwarka Sector - 9",
       "Neighbours": ["Dwarka Sector - 10", "Dwarka Sector - 8"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.06454, 
+      "latitude": 28.57487
     },
     {
       "FromTo": [],
@@ -459,7 +557,9 @@
       "Index": 40,
       "Name": "Dwarka Sector - 8",
       "Neighbours": ["Dwarka Sector - 9", "Dwarka Sector - 21"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.06706, 
+      "latitude": 28.56583
     },
     {
       "FromTo": [],
@@ -467,7 +567,9 @@
       "Index": 41,
       "Name": "Dwarka Sector - 21",
       "Neighbours": ["Dwarka Sector - 8"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      "longitude": 77.05828, 
+      "latitude": 28.55226
     },
     {
       "FromTo": [],
@@ -475,7 +577,9 @@
       "Index": 1,
       "Name": "Dilshad Garden",
       "Neighbours": ["Jhilmil"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.32142, 
+      "latitude": 28.67592
     },
     {
       "FromTo": [],
@@ -483,7 +587,9 @@
       "Index": 1,
       "Name": "Jhilmil",
       "Neighbours": ["Dilshad Garden", "Mansarover Park"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.31239, 
+      "latitude": 28.67579
     },
     {
       "FromTo": [],
@@ -491,7 +597,9 @@
       "Index": 1,
       "Name": "Mansarover Park",
       "Neighbours": ["Jhilmil", "Shahdara"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.30095, 
+      "latitude": 28.67544
     },
     {
       "FromTo": [],
@@ -499,7 +607,9 @@
       "Index": 1,
       "Name": "Shahdara",
       "Neighbours": ["Mansarover Park", "Welcome"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.28962, 
+      "latitude": 28.67345
     },
     {
       "FromTo": [],
@@ -507,7 +617,9 @@
       "Index": 1,
       "Name": "Welcome",
       "Neighbours": ["Shahdara", "Seelampur", "Jaffrabad", "East Azad Nagar"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.27756, 
+      "latitude": 28.67180
     },
     {
       "FromTo": [],
@@ -515,7 +627,9 @@
       "Index": 1,
       "Name": "Seelampur",
       "Neighbours": ["Welcome", "Shastri Park"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.26678, 
+      "latitude": 28.66989
     },
     {
       "FromTo": [],
@@ -523,7 +637,9 @@
       "Index": 1,
       "Name": "Shastri Park",
       "Neighbours": ["Seelampur", "Kashmere Gate"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.24994, 
+      "latitude": 28.66800
     },
     {
       "FromTo": [],
@@ -531,7 +647,9 @@
       "Index": 1,
       "Name": "Kashmere Gate",
       "Neighbours": ["Shastri Park", "Tis Hazari"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.22817, 
+      "latitude": 28.66750
     },
     {
       "FromTo": [],
@@ -539,7 +657,9 @@
       "Index": 1,
       "Name": "Tis Hazari",
       "Neighbours": ["Kashmere Gate", "Pulbangash"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.21653, 
+      "latitude": 28.66711
     },
     {
       "FromTo": [],
@@ -547,7 +667,9 @@
       "Index": 1,
       "Name": "Pulbangash",
       "Neighbours": ["Tis Hazari", "Pratap Nagar"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.20727, 
+      "latitude": 28.66636
     },
     {
       "FromTo": [],
@@ -555,7 +677,9 @@
       "Index": 1,
       "Name": "Pratap Nagar",
       "Neighbours": ["Pulbangash", "Shastri Nagar"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.19882, 
+      "latitude": 28.66662
     },
     {
       "FromTo": [],
@@ -563,7 +687,10 @@
       "Index": 1,
       "Name": "Shastri Nagar",
       "Neighbours": ["Pratap Nagar", "Inderlok Line-1"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.18169, 
+      "latitude": 28.66999
+      
     },
     {
       "FromTo": [],
@@ -571,7 +698,9 @@
       "Index": 1,
       "Name": "Inderlok Line-1",
       "Neighbours": ["Shastri Nagar", "Kanhaiya Nagar"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.16994, 
+      "latitude": 28.67319
     },
     {
       "FromTo": [],
@@ -579,7 +708,9 @@
       "Index": 1,
       "Name": "Kanhaiya Nagar",
       "Neighbours": ["Inderlok Line-1", "Keshav Puram"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.16459, 
+      "latitude": 28.68254
     },
     {
       "FromTo": [],
@@ -587,7 +718,9 @@
       "Index": 1,
       "Name": "Keshav Puram",
       "Neighbours": ["Kanhaiya Nagar", "Netaji Subhash Place"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.16160, 
+      "latitude": 28.68894
     },
     {
       "FromTo": [],
@@ -600,7 +733,9 @@
         "Shalimar Bagh",
         "Shakurpur"
       ],
-      "Line": "RED"
+      "Line": "RED",
+       "longitude": 77.15226, 
+       "latitude": 28.69591
     },
     {
       "FromTo": [],
@@ -608,7 +743,9 @@
       "Index": 1,
       "Name": "Kohat Enclave",
       "Neighbours": ["Netaji Subhash Place", "Pitampura"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.14024, 
+      "latitude": 28.69810
     },
     {
       "FromTo": [],
@@ -616,7 +753,9 @@
       "Index": 1,
       "Name": "Pitampura",
       "Neighbours": ["Kohat Enclave", "Rohini East"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.13223, 
+      "latitude": 28.70317
     },
     {
       "FromTo": [],
@@ -624,7 +763,9 @@
       "Index": 1,
       "Name": "Rohini East",
       "Neighbours": ["Pitampura", "Rohini West"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.12591, 
+      "latitude": 28.70760
     },
     {
       "FromTo": [],
@@ -632,7 +773,9 @@
       "Index": 1,
       "Name": "Rohini West",
       "Neighbours": ["Rohini East", "Rithala"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.11467, 
+      "latitude": 28.71483
     },
     {
       "FromTo": [],
@@ -640,7 +783,9 @@
       "Index": 1,
       "Name": "Rithala",
       "Neighbours": ["Rohini West"],
-      "Line": "RED"
+      "Line": "RED",
+      "longitude": 77.10713, 
+      "latitude": 28.72072
     },
 
     {
@@ -649,7 +794,8 @@
       "Index": 1,
       "Name": "Majlis Park",
       "Neighbours": ["Azadpur"],
-      "Line": "PINK"
+      "Line": "PINK",
+      
     },
     {
       "FromTo": [],
@@ -662,7 +808,9 @@
         "Adarsh Nagar",
         "Model Town"
       ],
-      "Line": "PINK"
+      "Line": "PINK",
+      "longitude": 77.18053, 
+      "latitude": 28.70696
     },
     {
       "FromTo": [],
@@ -670,7 +818,8 @@
       "Index": 1,
       "Name": "Shalimar Bagh",
       "Neighbours": ["Azadpur", "Netaji Subhash Place"],
-      "Line": "PINK"
+      "Line": "PINK",
+      
     },
     {
       "FromTo": [],
@@ -686,7 +835,9 @@
       "Index": 1,
       "Name": "Punjabi Bagh West",
       "Neighbours": ["Shakurpur", "ESI Hospital"],
-      "Line": "PINK"
+      "Line": "PINK",
+      "longitude": 77.14614, 
+      "latitude": 28.67289 
     },
     {
       "FromTo": [],
@@ -694,7 +845,8 @@
       "Index": 1,
       "Name": "ESI Hospital",
       "Neighbours": ["Punjabi Bagh West", "Rajouri Garden"],
-      "Line": "PINK"
+      "Line": "PINK",
+      
     },
     {
       "FromTo": [],
@@ -702,7 +854,8 @@
       "Index": 1,
       "Name": "Maya Puri",
       "Neighbours": ["Rajouri Garden", "Nariana Vihar"],
-      "Line": "PINK"
+      "Line": "PINK",
+      
     },
     {
       "FromTo": [],
@@ -710,7 +863,8 @@
       "Index": 1,
       "Name": "Nariana Vihar",
       "Neighbours": ["Maya Puri", "Delhi Cantt"],
-      "Line": "PINK"
+      "Line": "PINK",
+      
     },
     {
       "FromTo": [],
@@ -718,7 +872,8 @@
       "Index": 1,
       "Name": "Delhi Cantt",
       "Neighbours": ["Nariana Vihar", "Durgabai Deshmukh South Campus"],
-      "Line": "PINK"
+      "Line": "PINK",
+      
     },
     {
       "FromTo": [],
@@ -726,7 +881,7 @@
       "Index": 1,
       "Name": "Durgabai Deshmukh South Campus",
       "Neighbours": ["Delhi Cantt", "Sir Vishweshwaraiah Moti Bagh"],
-      "Line": "PINK"
+      "Line": "PINK",
     },
     {
       "FromTo": [],
@@ -734,7 +889,7 @@
       "Index": 1,
       "Name": "Sir Vishweshwaraiah Moti Bagh",
       "Neighbours": ["Durgabai Deshmukh South Campus", "Bhikaji Cama Place"],
-      "Line": "PINK"
+      "Line": "PINK",
     },
     {
       "FromTo": [],
@@ -750,7 +905,8 @@
       "Index": 1,
       "Name": "Sarojini Nagar",
       "Neighbours": ["Bhikaji Cama Place", "INA"],
-      "Line": "PINK"
+      "Line": "PINK",
+      
     },
     {
       "FromTo": [],
@@ -1350,7 +1506,8 @@
       "Index": 1,
       "Name": "Kalindi Kunj",
       "Neighbours": ["Jasola Vihar Saheed Bagh", "Okhla Bird Sanctuary"],
-      "Line": "MAGENTA"
+      "Line": "MAGENTA",
+      
     },
     {
       "FromTo": [],
@@ -1358,32 +1515,40 @@
       "Index": 1,
       "Name": "Okhla Bird Sanctuary",
       "Neighbours": ["Kalindi Kunj", "Botanical Garden"],
-      "Line": "MAGENTA"
+      "Line": "MAGENTA",
+      
     },
     {
       "Name": "Samaypur Badli",
       "Neighbours": ["Rohini Sector 18"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      
     },
     {
       "Name": "Rohini Sector 18",
       "Neighbours": ["Samaypur Badli", "Haiderpur Badli Mor"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      
     },
     {
       "Name": "Haiderpur Badli Mor",
       "Neighbours": ["Rohini Sector 18", "Jahangirpuri"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      
     },
     {
       "Name": "Jahangirpuri",
       "Neighbours": ["Haiderpur Badli Mor", "Adarsh Nagar"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.16267, 
+      "latitude": 28.72592
     },
     {
       "Name": "Adarsh Nagar",
       "Neighbours": ["Jahangirpuri", "Azadpur"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.17046, 
+      "latitude": 28.71642
     },
 
     {
@@ -1394,81 +1559,110 @@
     {
       "Name": "GTB Nagar",
       "Neighbours": ["Model Town", "Viswavidyalaya"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.20722, 
+      "latitude": 28.69785
     },
     {
       "Name": "Viswavidyalaya",
       "Neighbours": ["GTB Nagar", "Vidhan Sabha"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.21483, 
+      "latitude": 28.69480
     },
     {
       "Name": "Vidhan Sabha",
       "Neighbours": ["Viswavidyalaya", "Civil Lines"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.22140, 
+      "latitude": 28.68802
     },
     {
       "Name": "Civil Lines",
       "Neighbours": ["Vidhan Sabha", "Kashmere Gate"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.22410, 
+      "latitude": 28.67726
     },
 
     {
       "Name": "Chandhni Chowk",
       "Neighbours": ["Kashmere Gate", "Chawri Bazar"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.23014, 
+      "latitude": 28.65785
     },
     {
       "Name": "Chawri Bazar",
       "Neighbours": ["Chandhni Chowk", "New Delhi"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.22637, 
+      "latitude": 28.64931
     },
     {
       "Name": "New Delhi",
       "Neighbours": ["Chawri Bazar", "Rajiv Chowk"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.22144, 
+      "latitude": 28.64307
     },
 
     {
       "Name": "Patel Chowk",
       "Neighbours": ["Rajiv Chowk", "Central Secretariat"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.21389, 
+      "latitude": 28.62295
     },
     {
       "Name": "Udyog Bhawan",
       "Neighbours": ["Central Secretariat", "Lok Kalyan Marg"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.21198, 
+      "latitude": 28.61166
     },
     {
       "Name": "Lok Kalyan Marg",
       "Neighbours": ["Udyog Bhawan", "Jorbagh"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      
     },
     {
       "Name": "Jorbagh",
       "Neighbours": ["Lok Kalyan Marg", "INA"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.21209, 
+      "latitude": 28.58708
     },
 
     {
       "Name": "AIIMS",
       "Neighbours": ["INA", "Green Park"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.20771, 
+      "latitude": 28.56892
     },
     {
       "Name": "Green Park",
       "Neighbours": ["AIIMS", "Hauz Khas"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.20682, 
+      "latitude": 28.55979
     },
 
     {
       "Name": "MalviaNagar",
       "Neighbours": ["Hauz Khas", "Saket"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.20565, 
+      "latitude": 28.52798
     },
     {
       "Name": "Saket",
       "Neighbours": ["MalviaNagar", "Qutab Minar"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.20138, 
+      "latitude": 28.52060
     },
     {
       "Name": "Qutab Minar",
@@ -1478,47 +1672,65 @@
     {
       "Name": "Chhattarpur",
       "Neighbours": ["Qutab Minar", "Sultanpur"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.17484, 
+      "latitude": 28.50671
     },
     {
       "Name": "Sultanpur",
       "Neighbours": ["Chhattarpur", "Ghotorni"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.16153, 
+      "latitude": 28.49927
     },
     {
       "Name": "Ghotorni",
       "Neighbours": ["Sultanpur", "Arjan Garh"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.14922, 
+      "latitude": 28.49383 
     },
     {
       "Name": "Arjan Garh",
       "Neighbours": ["Ghotorni", "Guru Dronacharya"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.12583, 
+      "latitude": 28.48076
     },
     {
       "Name": "Guru Dronacharya",
       "Neighbours": ["Arjan Garh", "Sikandarpur"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.10232, 
+      "latitude": 28.48203
     },
     {
       "Name": "Sikandarpur",
       "Neighbours": ["Guru Dronacharya", "MG Road"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.09235, 
+      "latitude": 28.48182
     },
     {
       "Name": "MG Road",
       "Neighbours": ["Sikandarpur", "IFFCO Chowk"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.08006, 
+      "latitude": 28.47957
     },
     {
       "Name": "IFFCO Chowk",
       "Neighbours": ["MG Road", "Huda City Centre"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.07175, 
+      "latitude": 28.47209
     },
     {
       "Name": "Huda City Centre",
       "Neighbours": ["IFFCO Chowk"],
-      "Line": "YELLOW"
+      "Line": "YELLOW",
+      "longitude": 77.07268, 
+      "latitude": 28.45927
     }
   ]
 }
