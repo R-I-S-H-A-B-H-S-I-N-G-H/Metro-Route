@@ -6,7 +6,8 @@
       "Index": 1,
       "Name": "Vaishali",
       "Neighbours": ["Kaushambi"],
-      "Line": "BLUE"
+      "Line": "BLUE",
+      
     },
     {
       "FromTo": [],
